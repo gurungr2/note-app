@@ -8,10 +8,7 @@ const addNote = (title, body) => {
 debugger
 
     if (!duplicateNote) {
-        notes.push({
-            title: title,
-            body: body
-        })
+        notes.push({ title, body})  //Equivalent title: title,body: body
         saveNotes(notes)
         console.log("New note ADDED")
     } else {
